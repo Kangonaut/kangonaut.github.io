@@ -16,8 +16,23 @@ params:
     - name: "rss"
       url: "./index.xml"
 
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+
 outputs:
-home:
-  - HTML
-  - RSS
-  - JSON # necessary for search
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
