@@ -1,4 +1,23 @@
 baseURL: https://example.org/
 languageCode: en-us
-title: Kangonaut Blog
+title: Kangonaut's Blog
 theme: ["PaperMod"]
+
+params:
+  defaultTheme: dark
+
+  homeInfoParams:
+    Title: You could call it random hopping. 🦘
+    Content: I am interested in Machine Learning an AI. But I usually just dive into any topic that sparks my interest :)
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/Kangonaut"
+    - name: "rss"
+      url: "./index.xml"
+
+outputs:
+home:
+  - HTML
+  - RSS
+  - JSON # necessary for search
